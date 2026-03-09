@@ -188,12 +188,6 @@ Groq Llama 3.3 70B → Answer
 
 ---
 
-## ⚠️ Disclaimer
-
-ProfileIQ only analyzes **publicly available** LinkedIn data. Use responsibly and in accordance with LinkedIn's Terms of Service.
-
----
-
 ## 👨‍💻 Author
 
 **Yadharth GC** — [GitHub](https://github.com/YadharthGC)
