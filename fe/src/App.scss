@@ -1,0 +1,23 @@
+/* scrollbar.scss */
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #1e1e2e transparent;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #1e1e2e;
+    border-radius: 999px;
+
+    &:hover {
+      background-color: #0A66C2;
+    }
+  }
+}

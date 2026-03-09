@@ -1,0 +1,15 @@
+//AI
+ai/venv/
+ai/.env
+ai/chroma_db/
+ai/__pycache__/
+
+//BE
+be/node_modules/
+be/.env
+
+
+//FE
+fe/node_modules/
+fe/.env
+fe/dist/
