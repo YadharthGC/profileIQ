@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Linkedin, Eye, EyeOff, Check } from 'lucide-react'
 import { authAPI } from '../api'
 import axios from "axios"
@@ -7,6 +7,7 @@ import axios from "axios"
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [form, setForm] = useState({ name: '', email: '', password: '' })
+  const navigate = useNavigate()
 
   const passwordChecks = [
     { label: 'At least 8 characters', pass: form.password.length >= 8 },
@@ -18,6 +19,8 @@ export default function RegisterPage() {
     try {
       console.log(form)
       const res = await axios.post(authAPI + "register", form)
+      navigate("/")
+
 
     } catch (err) {
       console.log(err)
